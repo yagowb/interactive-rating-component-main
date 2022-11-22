@@ -61,6 +61,12 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 5%;
+    cursor: pointer;
+}
+
+#form div:hover{
+    transition: 200ms;
+    background-color: #343d47;
 }
 
 .form-container button{
@@ -88,5 +94,6 @@ body{
 @media (max-width:749px) {
     .form-container{
         width: 90%;
+        padding-block: 7.5%;
     }
 }
