@@ -162,6 +162,15 @@ p.disclaimer {
     background-color: #343d47;
 }
 
+.btn:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px hsl(25,97%,53%);
+}
+
+.btn:focus{
+    color: hsl(25,97%,53%);
+}
+
 .hidden {
     display: none;
 }
