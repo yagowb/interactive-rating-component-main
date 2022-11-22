@@ -3,46 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
+  <link rel="stylesheet" href="./styles.css"/>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Noto+Serif:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive rating component</title>
 
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script>
+    let newRate;
+    function handleSelect(rate){
+      newRate = rate;
+    }
+
+    function handleSend(){
+
+    }
+  </script>
 </head>
 <body>
 
   <!-- Rating state start -->
 
-  <h1>How did we do?</h1>
+  <div class="form-container">
+    <div class="star-container">
+      <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
+    </div>
+    <h1>How did we do?</h1>
 
-  <p>Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!</p>
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
 
-  <h3>1 2 3 4 5</h3>
+    <form id="form" action="">
+      <div>
+        <label for="1">1</label>
+      </div> 
+       <div>
+         <label for="2">2</label>
+       </div>
+       <div>
+         <label for="3">3</label>
+       </div>
+       <div>
+         <label for="4">4</label>
+       </div>
+       <div>
+         <label for="5">5</label>
+       </div>
+    </form>
+    <button>SUBMIT</button>
 
-  <input type="submit">
+</div>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  <p>You selected <!-- Add rating here --> out of 5</p>
+  <!-- <p>You selected  -->
+    <!-- Add rating here --> 
+    <!-- out of 5</p> -->
 
-  <p>Thank you!
+  <!-- <p>Thank you! -->
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-</p>
+  <!-- We appreciate you taking the time to give a rating. If you ever need more support,  -->
+  <!-- don’t hesitate to get in touch! -->
+<!-- </p> -->
   <!-- Thank you state end -->
 
-  <br>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  <!-- <br> -->
+  <!-- <div class="attribution"> -->
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Yago</a>.
-  </div>
+    Coded by <a href="#">Barreto</a>.
+  </div> -->
 </body>
 </html>
