@@ -1,9 +1,4 @@
-#form{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 @font-face {
     font-family: expressway-bold;
@@ -16,18 +11,25 @@
 }
 
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: expressway;
 }
 
-body{
-    height: 100vh;
-    background-color: black;
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    background-color: hsl(216, 12%, 8%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
+    justify-content: center;
+    min-height: 100vh;
+  }
 
-.form-container{
+
+.form-container, .thank-you{
     background-color: #222832;
     width: 30%;
     border-radius: 24px;
@@ -37,20 +39,52 @@ body{
     background: linear-gradient(0deg, rgba(20,21,24,1) 0%, rgba(36,41,53,1) 100%);
 }
 
-.form-container h1{
-    margin-top: 9%;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 1.75rem;
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.form-container p {
-    color: #7D828D;
-    line-height: 25px;
-    font-weight: 100;
+.thank-you img {
+    display: block;
+    margin: 0 auto 2rem;
 }
 
-#form div{
+.thank-you p.gray{
+    color: hsl(25,97%,53%);
+    background-color: hsl(213,20%,22%);
+    border-radius: 30px;
+    padding: 0 0.3rem;
+}
+
+.thank-you h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.thank-you p {
+    color: hsl(217,12%,63%);
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+.form-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-container ul li button {
     color: #6c7178;
     background-color: #262E38;
     font-size: 1.25rem;
@@ -64,10 +98,34 @@ body{
     cursor: pointer;
 }
 
-#form div:hover{
-    transition: 200ms;
-    background-color: #343d47;
+.form-container h1{
+    margin-top: 9%;
+    margin-bottom: 1rem;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.75rem;
 }
+
+p {
+  line-height: 1.8;
+  color: hsl(217, 12%, 63%);margin-bottom: 1rem;
+}
+
+p.disclaimer {
+  padding: 0 1.5rem;
+  max-width: 400px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-container p {
+    color: #7D828D;
+    line-height: 25px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+
 
 .form-container button{
     background-color: #FC7612;
@@ -79,6 +137,33 @@ body{
     margin-top: 8%;
     letter-spacing: 3px;
     font-size: 1rem;
+}
+
+.btn-submit {
+    background-color: hsl(25,97%,53%);
+    color: #fff;
+    width: 100%;
+    padding: 0.8rem 0 0.6rem;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: hsl(25,97%,53%);
+}
+
+.btn:hover{
+    transition: 200ms;
+    background-color: #343d47;
+}
+
+.hidden {
+    display: none;
 }
 
 .form-container .star-container{
@@ -96,4 +181,16 @@ body{
         width: 90%;
         padding-block: 7.5%;
     }
+}
+
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228,45%,44%);
 }
