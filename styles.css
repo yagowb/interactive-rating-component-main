@@ -84,3 +84,9 @@ body{
     align-items: center;
     border-radius: 50%;
 }
+
+@media (max-width:749px) {
+    .form-container{
+        width: 90%;
+    }
+}
