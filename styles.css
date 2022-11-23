@@ -190,6 +190,11 @@ p.disclaimer {
         width: 90%;
         padding-block: 7.5%;
     }
+    .thank-you{
+        width: 90%;
+        background-color: red;
+        padding-block: 7.5%;
+    }
 }
 
 
